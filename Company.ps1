@@ -1,5 +1,5 @@
-
-## Invoke-SQLCmd -HostName "localhost" -Database "CPSC332" -InputFile ".\00. Company.sql" -ErrorAction Stop;
+# Creation of CPSC332 database
+Invoke-SQLCmd -HostName "localhost" -Database "CPSC332" -InputFile ".\00. Company.sql" -ErrorAction Stop;
 
 $SqlConnection = New-Object System.Data.SqlClient.SqlConnection;
 $SqlConnection.ConnectionString = "Server = ETD; Database = CPSC332; Integrated Security = True";
